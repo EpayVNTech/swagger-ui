@@ -10,7 +10,7 @@ LABEL maintainer="fehguy"
 
 ENV API_KEY "**None**"
 ENV SWAGGER_JSON "/app/swagger.json"
-ENV PORT 8080
+ENV PORT 8004
 ENV BASE_URL ""
 ENV SWAGGER_JSON_URL ""
 
@@ -21,6 +21,7 @@ COPY --chmod=0666 ./dist/* /usr/share/nginx/html/
 COPY --chmod=0555 ./docker/docker-entrypoint.d/ /docker-entrypoint.d/
 COPY --chmod=0666 ./docker/configurator /usr/share/nginx/configurator
 
+COPY ./openapi ./usr/share/nginx/html/docs/
 RUN chmod 777 /usr/share/nginx/html/ /etc/nginx/ /var/cache/nginx/ /var/run/
 
-EXPOSE 8080
+EXPOSE 8004

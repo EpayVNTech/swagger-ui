@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  swagger:
+    container_name: swagger-service
+    image: thinhlt/swagger-ui
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+        - 8004:8004
+#    command: -c "tail -f /dev/null"
+#    entrypoint: /bin/sh
+    environment:
+      URLS_PRIMARY_NAME: "IDENTITY-SVC"
+      URLS: "[{ url: 'docs/identity-docs.yaml', name: 'IDENTITY-SVC' },
+      { url: 'docs/bnpl-docs.yaml', name: 'BNPL-SVC' },
+      { url: 'docs/com-docs.yaml', name: 'COM-SVC' },
+      { url: 'docs/contract-docs.yaml', name: 'CONTRACT-SVC' },
+      { url: 'docs/core-docs.yaml', name: 'CORE-SVC' },
+      { url: 'docs/customer-docs.yaml', name: 'CUSTOMER-SVC' },
+      { url: 'docs/dashboard-docs.yaml', name: 'DASHBOARD-SVC' },
+      { url: 'docs/loanapp-docs.yaml', name: 'LOANAPP-SVC' },
+      { url: 'docs/loanapp-hmg-docs.yaml', name: 'LOANAPP-HMG-SVC' },
+      { url: 'docs/monexcore-docs.yaml', name: 'MONEXCORE-SVC' },
+      { url: 'docs/payment-docs.yaml', name: 'PAYMENT-SVC' },
+      { url: 'docs/public-docs.yaml', name: 'PUBLIC-SVC' }]"
+

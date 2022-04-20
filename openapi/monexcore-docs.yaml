@@ -439,16 +439,19 @@ paths:
         - name: "code"
           required: false
           in: "query"
+          description: "Mã sản phẩm"
           schema:
             type: "string"
         - name: "name"
           required: false
           in: "query"
+          description: "Tên sản phẩm"
           schema:
             type: "string"
         - name: "mifosProductId"
           required: false
           in: "query"
+          description: "Id sản phẩm của Core"
           schema:
             type: "number"
       responses:
@@ -515,16 +518,19 @@ paths:
         - name: "code"
           required: false
           in: "query"
+          description: "Mã sản phẩm"
           schema:
             type: "string"
         - name: "name"
           required: false
           in: "query"
+          description: "Tên sản phẩm"
           schema:
             type: "string"
         - name: "mifosProductId"
           required: false
           in: "query"
+          description: "Id sản phẩm của Core"
           schema:
             type: "number"
       responses:
@@ -1686,18 +1692,24 @@ components:
       properties:
         code:
           type: "string"
+          description: "Mã sản phẩm"
         name:
           type: "string"
+          description: "Tên sản phẩm"
         statusGroupId:
           type: "string"
+          description: "Id nhóm trạng thái"
         pdModelIds:
+          description: "Ids Model CDE"
           type: "array"
           items:
             type: "number"
         mifosProductId:
           type: "number"
+          description: "Id sản phẩm của Core"
         description:
           type: "string"
+          description: "Mô tả sản phẩm"
       required:
         - "code"
         - "name"
@@ -1706,24 +1718,38 @@ components:
       properties:
         code:
           type: "string"
+          description: "Mã sản phẩm"
         name:
           type: "string"
+          description: "Tên sản phẩm"
         description:
           type: "string"
+          description: "Mô tả sản phẩm"
         statusGroupId:
           type: "string"
+          description: "Id nhóm trạng thái"
         pdModelIds:
+          description: "Chuỗi Id Model CDE"
           type: "array"
           items:
             type: "number"
         mifosProductId:
           type: "number"
+          description: "Id sản phẩm của Core"
     DeleteLoanProductDto:
       type: "object"
       properties: {}
     ContractTemplate:
       type: "object"
       properties:
+        id:
+          type: "string"
+        content:
+          type: "string"
+        name:
+          type: "string"
+        isActive:
+          type: "boolean"
         createdBy:
           type: "string"
         updatedBy:
@@ -1732,6 +1758,15 @@ components:
           type: "string"
         updatedAt:
           type: "string"
+      required:
+        - "id"
+        - "content"
+        - "name"
+        - "isActive"
+        - "createdBy"
+        - "updatedBy"
+        - "createdAt"
+        - "updatedAt"
     ApiResponseContractTemplates:
       type: "object"
       properties:

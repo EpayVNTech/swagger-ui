@@ -8,7 +8,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/pubic
   description: Generated server url
-- url: https://api.staging.epay.vn/public
+- url: https://api-staging.epay.vn/public
   description: Generated server url
 paths:
   /v1/saveInfo/customer:

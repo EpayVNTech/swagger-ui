@@ -7,7 +7,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/identity
   description: Generated server url
-- url: https://api.staging.epay.vn/identity
+- url: https://api-staging.epay.vn/identity
   description: Generated server url
 paths:
   /v1/permissions/{id}:

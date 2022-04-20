@@ -7,7 +7,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/payment
   description: Generated server url
-- url: https://api.staging.epay.vn/payment
+- url: https://api-staging.epay.vn/payment
   description: Generated server url
 paths:
   /v1/gpayVirtualAccounts/{customerId}:

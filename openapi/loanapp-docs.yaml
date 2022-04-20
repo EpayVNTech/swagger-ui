@@ -7,7 +7,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/loanapp
   description: Generated server url
-- url: https://api.staging.epay.vn/loanapp
+- url: https://api-staging.epay.vn/loanapp
   description: Generated server url
 paths:
   /v1/promotions/vouchers/{voucherId}:

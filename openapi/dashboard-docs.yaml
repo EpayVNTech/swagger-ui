@@ -7,7 +7,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/dashboard
   description: Generated server url
-- url: https://api.staging.epay.vn/dashboard
+- url: https://api-staging.epay.vn/dashboard
   description: Generated server url
 paths:
   /v1/tngDataTransactions:

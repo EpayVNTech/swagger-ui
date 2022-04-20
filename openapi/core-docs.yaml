@@ -7,7 +7,7 @@ servers:
   description: Generated server url
 - url: https://api.pdl-dev.local.epay.vn/core
   description: Generated server url
-- url: https://api.staging.epay.vn/core
+- url: https://api-staging.epay.vn/core
   description: Generated server url
 paths:
   /webhook-perfios:

@@ -1526,7 +1526,7 @@ servers:
     description: Generated server url
   - url: https://api.pdl-dev.local.epay.vn/monexcore
     description: Generated server url
-  - url: https://api.staging.epay.vn/monexcore
+  - url: https://api-staging.epay.vn/monexcore
     description: Generated server url
 components:
   securitySchemes:
